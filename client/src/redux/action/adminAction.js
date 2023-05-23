@@ -6,7 +6,7 @@ import {
     GET_SUBJECTS
 } from '../actionTypes'
 
-const url = "http://localhost:5000"
+const url = "https://college-backend-dy3r.onrender.com"
 
 const setAdmin = (data) => {
     return {
