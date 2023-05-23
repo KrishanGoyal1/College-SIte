@@ -127,7 +127,7 @@ module.exports = {
                 errors.registrationNumber = 'Registration number not found';
                 return res.status(404).json(errors);
             }
-            const isCorrect = await bcrypt.compare(password, admin.password)
+            const isCorrect = await bcrypt.compare(password, admin.password);
             if (!isCorrect) {
                 errors.password = 'Invalid Credentials';
                 return res.status(404).json(errors);
@@ -146,7 +146,8 @@ module.exports = {
                 (err, token) => {
                     res.json({
                         success: true,
-                        token: 'Bearer ' + token
+                        token: 'Bearer ' + token,
+                        payload
                     });
                 }
             );

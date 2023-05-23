@@ -92,11 +92,11 @@ const FacultyStudentLoginPags = () => {
     return (
         <div className="container-fluid">
             <div className="row" id="trail">
-                <div className="col-md-6">
+                <div className="col-md-12">
                 </div>
                 <div className="col-md-6">
                     <div className="row m-5">
-                        <div className="col-md-8 m-auto border" style={{ backgroundColor: "white", borderRadius: "1.2rem", padding: "1rem 1rem 0rem 1rem" }}>
+                        <div className="col-md-8 m-auto border" style={{ backgroundColor:"rgba(170,74,68,.5)", borderRadius: "1.2rem", padding: "1rem 1rem 0rem 1rem" }}>
                             <div>
                                 <h3 className="text-center ">FACULTY</h3>
                                 <form noValidate onSubmit={facultyFormHandler}>
@@ -130,16 +130,16 @@ const FacultyStudentLoginPags = () => {
                                         </div>
                                     </div>
 
-                                    {!isFacultyLoading && <button type="submit" className="btn btn-info btn-block">Login</button>}
+                                    {!isFacultyLoading && <button type="submit" className="btn btn-info btn-block" style={{margin:"auto auto 1.5rem auto"}}>Login</button>}
                                 </form>
-                                <p className="text-center mt-2 "><Link className="text-center" to="/forgotPassword/faculty">Forgot Password</Link></p>
+                                {/* <p className="text-center mt-2 "><Link className="text-center" to="/forgotPassword/faculty">Forgot Password</Link></p> */}
                             </div>
                         </div>
                     </div>
                     <div className="row m-5">
-                        <div className="col-md-8 m-auto border" style={{ backgroundColor: "white", borderRadius: "1.2rem", padding: "1rem 1rem 0rem 1rem" }}>
+                        <div className="col-md-8 m-auto border" style={{ backgroundColor: "rgba(170,74,68,.5)", borderRadius: "1.2rem", padding: "1rem 1rem 0rem 1rem" }}>
                             <div>
-                                <h3 className="text-center">STUDENT</h3>
+                                <h3 className="text-center" style={{color:"white"}}>STUDENT</h3>
                                 <form noValidate onSubmit={studentFormHandler}>
                                     <div className="form-group">
                                         <label htmlFor="studentId">Registration Number</label>
@@ -170,10 +170,10 @@ const FacultyStudentLoginPags = () => {
                                             }
                                         </div>
                                     </div>
-                                    {!isStudentLoading && <button type="submit" className="btn btn-info btn-block ">Login</button>}
+                                    {!isStudentLoading && <button type="submit" className="btn btn-info btn-block "style={{margin:"auto auto 1.5rem auto"}}>Login</button>}
 
                                 </form>
-                                <p className="text-center"><Link className="text-center" to="/forgotPassword/student">Forgot Password</Link></p>
+                                {/* <p className="text-center"><Link className="text-center" to="/forgotPassword/student">Forgot Password</Link></p> */}
                             </div>
                         </div>
                     </div>
